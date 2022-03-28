@@ -57,7 +57,3 @@ if(savedToDos !== null){
     parsedToDos.forEach(paintToDo);
 }
 
-function  TodoFilter(item){
-    return item !== 3;
-}
-
