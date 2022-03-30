@@ -1,12 +1,16 @@
 html, body { width: 100%; height: 100%; padding: 0; margin: 0; overflow: hidden; }
 .clicked { color: tomato; }
 .hidden { display: none; }
-.bgImage { position: absolute; top: 0; width: 100%; z-index: 1; }
-#clock { z-index: 2; position: absolute; top: 5%; }
-#greeting { z-index: 2; position: absolute; top: 10%; }
-#todo-form { z-index: 2; position: absolute; top: 15%; }
-#todo-list { z-index: 2; position: absolute; top: 20%; }
-#quote { z-index: 2; position: absolute; top: 40%; } 
+.bgImage { position: absolute; top: 0; width: 100%; height: 100vh; z-index: 1; }
+#clock { z-index: 2; position: absolute; left: 50%; transform: translate(-50%, 0); top: 30%; color: #fff; font-size: 4rem; }
+#greeting { z-index: 2; position: absolute; left: 50%; transform: translate(-50%, 0); top: 40%; color: #fff; font-size: 2.4rem; }
+#todo-form { z-index: 2; position: absolute; left: 50%; transform: translate(-50%, 0); top: 50%; width: 20%; color: #fff; font-size: 2rem;  }
+#todo-form input { width: 100%; border-radius: 12px; border: 0; height: 36px; display: inline-block; box-sizing: border-box; text-align: center; }
+#todo-list { z-index: 2; position: absolute; left: 50%; transform: translate(-50%, 0); top: 59%; color: #fff; font-size: 1.2rem; list-style: decimal-leading-zero; }
+#todo-list li span:first-child { padding: 0 10px; }
+#todo-list li button { background: #fff; border-radius: 50%; width: 30px; height: 30px; }
+#quote { z-index: 2; text-align: center; position: absolute; bottom: 20%; left: 50%; transform: translate(-50%, 0); color: #fff; font-size: 1.1rem; width: 38%; } 
+#quote span:last-child { display: block; text-align: center; padding-top: 14px; font-size: 1.3rem; font-weight: bold; }
 #weather { z-index: 2; position: absolute; top: 45%; }
 .container { position: absolute; top: 0; width: 100%; height: 100%; }
 .inner_cont { position: relative; width: 100%; height: 100%; }
