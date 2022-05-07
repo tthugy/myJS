@@ -1,0 +1,2 @@
+# myJS
+vanillaJS
